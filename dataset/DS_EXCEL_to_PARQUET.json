@@ -1,0 +1,21 @@
+{
+	"name": "DS_EXCEL_to_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "EXCEL_TO_PARQUET_UPLOAD",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "DATA.xlsx",
+				"fileSystem": "excelupload"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

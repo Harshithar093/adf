@@ -1,0 +1,21 @@
+{
+	"name": "LS_ONPREM_STORED_proc",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-2S7R6ID\\SQLEXPRESS",
+			"database": "customerdb",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "rh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4MjQ2MDk2Yi05YWI0LTRlNmMtOTc4Mi1hYmQ5N2RhNTI4ZDYiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedintegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

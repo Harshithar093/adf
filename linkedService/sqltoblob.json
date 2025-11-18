@@ -1,0 +1,21 @@
+{
+	"name": "sqltoblob",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-2S7R6ID\\SQLEXPRESS",
+			"database": "customerdb",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "rh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlNGE0YTgzYS02NmZmLTQ5MmEtOWY1My03MDk3MTk5NzRmY2QiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedintegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

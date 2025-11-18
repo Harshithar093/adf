@@ -1,0 +1,25 @@
+{
+	"name": "TR_eventtrigger_MANUALCSV",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_eventtrigger",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "BlobEventsTrigger",
+		"typeProperties": {
+			"blobPathBeginsWith": "/eventbasedtrigger/blobs/data",
+			"blobPathEndsWith": ".csv",
+			"ignoreEmptyBlobs": true,
+			"scope": "/subscriptions/269a46f8-845e-4542-9f78-9d2c28510d6e/resourceGroups/rgdevdemodata/providers/Microsoft.Storage/storageAccounts/adlsdevbulkloadh",
+			"events": [
+				"Microsoft.Storage.BlobCreated"
+			]
+		}
+	}
+}

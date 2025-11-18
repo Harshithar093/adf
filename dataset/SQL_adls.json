@@ -1,0 +1,20 @@
+{
+	"name": "SQL_adls",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "SQLtoadlsisnk",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "bulk"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

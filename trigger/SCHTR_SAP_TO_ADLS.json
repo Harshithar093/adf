@@ -1,0 +1,26 @@
+{
+	"name": "SCHTR_SAP_TO_ADLS",
+	"properties": {
+		"description": "schedule trigger for moving sap to adls",
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_triggers",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Day",
+				"interval": 1,
+				"startTime": "2025-11-18T13:51:00",
+				"endTime": "2025-11-19T06:51:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"name": "SqlServer2_storedproc_audit",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "DESKTOP-2S7R6ID\\SQLEXPRESS",
+			"database": "customerdb",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "rh",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJhZjUyYTlmZi1hMjVlLTQ3OWItYmM2OC03NDY3N2I4YjBjNzMiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "selfhostedintegrationRuntime1",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

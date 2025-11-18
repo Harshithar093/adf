@@ -1,0 +1,43 @@
+{
+	"name": "lookup_onprem_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ONPREM_STORED_proc",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "SqlServerTable",
+		"schema": [
+			{
+				"name": "loadid",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "tablename",
+				"type": "varchar"
+			},
+			{
+				"name": "loadstatus",
+				"type": "varchar"
+			},
+			{
+				"name": "dataread",
+				"type": "varchar"
+			},
+			{
+				"name": "Errorid",
+				"type": "varchar"
+			},
+			{
+				"name": "errormessage",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "audit",
+			"table": "copylog"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
